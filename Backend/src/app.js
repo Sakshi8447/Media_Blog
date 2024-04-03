@@ -6,20 +6,24 @@ import cors from "cors"
 const app = express();
 
 // add all the middlewares
-app.use(express.json());
-app.use(express.urlencoded({extended: false}));
-app.use(cookieParser())
+
 app.use(cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: 'http://localhost:5173',
     credentials: true
 }))
 
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+app.use(cookieParser())
+
+
 // import all the routers here.
 import userRouter from "./routes/user.routes.js"
+import postRouter from "./routes/post.routes.js"
 
-// routes middlewares information
-app.use("/api/user", userRouter);
-
+// routes middlewares information - version 1
+app.use("/api/v1/user", userRouter);
+app.use("/api/v1/post", postRouter)
 
 
 
