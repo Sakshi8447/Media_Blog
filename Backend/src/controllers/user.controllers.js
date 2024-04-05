@@ -19,7 +19,7 @@ const getAccessAndRefreshToken = async function (id) {
         return { accessToken, refreshToken }
     } catch (error) {
         // res.status(500).json({message: "Something went wrong while generating referesh and access token"})
-        throw new ApiError(500, "Something went wrong while generating referesh and access token")
+        throw new ApiError(500, "Something went wrong while generating referesh and access token");
         console.log(error);
     }
 
