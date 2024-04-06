@@ -71,5 +71,3 @@ userSchema.methods.generateRefreshToken = function () {
 }
 
 export const User = mongoose.model("User", userSchema);
-
-// Srajan , srajan, sRajan, srAjan -> srajan

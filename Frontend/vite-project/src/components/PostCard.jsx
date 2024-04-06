@@ -5,7 +5,7 @@ import { Card } from "flowbite-react"
 const PostCard = ({ post }) => {
     return (
         <>
-            <div>
+            {/* <div>
                 <Card className="max-w-sm" imgSrc={post.image} horizontal>
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         {post.title}
@@ -14,7 +14,7 @@ const PostCard = ({ post }) => {
                         {post.content.slice(0, 100)}
                     </p>
                 </Card>
-            </div>
+            </div> */}
         </>
     )
 }
