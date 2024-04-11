@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home.jsx"
 import {Header} from "./components/Header.jsx"
-// import { Bottom } from "./components/Bootom.jsx"
+import { Bottom } from "./components/Bootom.jsx"
 import {Login} from "./pages/Login.jsx"
 import {Register } from "./pages/Register.jsx"
 import { useEffect , useState} from "react"

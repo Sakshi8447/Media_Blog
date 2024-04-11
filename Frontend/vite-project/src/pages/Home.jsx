@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import PostCard from "../components/PostCard.jsx"
+//import { Bottom } from "../components/Bootom.jsx"
 import { SearchBar } from "../components/SearchBar.jsx"
 
 const Home = () => {
